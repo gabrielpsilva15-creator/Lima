@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instituição Escolar SENAI</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            color: #222222;
+        }
+
+        header {
+            background-color: #f8f8f8;
+            padding: 15px 20px;
+            border: 1px solid #dddddd;
+        }
+
+        header img {
+            width: 44px;
+            height: 44px;
+           
+        }
+
+        nav {
+            background-color: #f8f8f8;
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #dddddd;
+        }
+
+        nav a {
+            color: #222222;
+            font-size: 14px;
+            margin: 5px 10px;
+            padding: 8px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            color: #ff6600;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        #inicio {
+            background-color: #f8f8f8;
+            border: 1px solid #d8cccc;
+            text-align: center;
+            padding: 45px 20px;
+            margin: 20px auto 35px;
+        }
+
+        #inicio h2 {
+            font-size: 28px;
+            font-weight: normal;
+        }
+
+        #inicio p {
+            font-size: 16px;
+            max-width: 700px;
+            margin: 15px auto;
+        }
+
+        article {
+            background-color: #f8f8f8;
+            padding: 18px;
+            margin: 25px 0;
+        }
+
+        article h2 {
+            font-size: 24px;
+            font-weight: normal;
+        }
+
+        article p {
+            color: #555555;
+        }
+
+        #cursos,
+        #contato,
+        #video {
+            padding: 25px 10px;
+            margin-top: 25px;
+        }
+
+        #cursos h2,
+        #contato h2,
+        #video h2 {
+            font-size: 26px;
+            font-weight: normal;
+        }
+
+        #cursos li {
+            margin-bottom: 12px;
+        }
+
+        .botao {
+            display: inline-block;
+            background-color: #ff6600;
+            color: white;
+            text-decoration: none;
+            padding: 10px 25px;
+            margin-top: 15px;
+            border: 1px solid #ff6600;
+        }
+
+        .botao:hover {
+            background-color: #cc5200;
+        }
+
+        #video iframe {
+            display: block;
+            width: 1000;
+            height: 400px;
+            margin: 20px auto;
+            border: none;
+        }
+
+        footer {
+            background-color: #202939;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 30px;
+        }
+
+        footer h3 {
+            color: #ff6600;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        #inicio {
+            padding: 25px 10px;
+        }
+
+        #inicio p {
+            width: auto;
+        }
+
+        nav a {
+            margin: 5px;
+        }
+
+        #video iframe {
+            height: 230px;
+        }
+
+        .lista-cursos {
+            list-style: none;
+            padding: 0;
+        }
+
+        .lista-cursos li {
+            background-color: #f8f8f8;
+            border: 1px solid #dddddd;
+            padding: 20px;
+            margin: 20px 0;
+            min-height: 120px;
+            overflow: auto;
+        }
+
+        .lista-cursos img {
+            width: 180px;
+            height: 120px;
+            object-fit: cover;
+            float: left;
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+
+        .lista-cursos strong {
+            color: #ff6600;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="Senai.png" alt="Logo SENAI">
+    </header>
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#video">Vídeo</a>
+        <a href="#contato">Fale Conosco</a>
+    </nav>
+
+    <main>
+
+        <section id="inicio">
+
+            <h2>Bem-vindo ao SENAI</h2>
+
+            <p>
+                O SENAI oferece educação profissional e tecnológica,
+                preparando estudantes para o mercado de trabalho.
+            </p>
+
+            <p>
+                Aqui você pode desenvolver habilidades, aprender novas
+                tecnologias e construir seu futuro profissional.
+            </p>
+
+            <a href="#cursos" class="botao">
+                Conheça nossos cursos
+            </a>
+
+        </section>
+
+        <article class="texto">
+
+            <h2>Cursos SENAI</h2>
+
+            <p>
+                Prepare-se para o mercado de trabalho
+                com cursos de qualidade e formação profissional.
+            </p>
+
+            <a href="#cursos" class="botao">Saiba mais</a>
+
+        </article>
+
+        <section id="cursos">
+
+            <ul class="lista-cursos">
+
+                <li>
+                    <img src="Desenvolvimento.png" alt="Curso de Desenvolvimento de Sistemas">
+                    <strong>Desenvolvimento de Sistemas:</strong>
+                    programação, criação de sites e banco de dados.
+                </li>
+
+                <li>
+                    <img src="Eletroeletronica.png" alt="Curso de Eletroeletrônica">
+                    <strong>Eletroeletrônica:</strong>
+                    circuitos elétricos e componentes eletrônicos.
+                </li>
+
+                <li>
+                    <img src="Mecanica.png" alt="Curso de Mecânica Industrial">
+                    <strong>Mecânica Industrial:</strong>
+                    máquinas, ferramentas e processos industriais.
+                </li>
+
+                <li>
+                    <img src="Administracao.png" alt="Curso de Administração">
+                    <strong>Administração:</strong>
+                    organização, planejamento e processos empresariais.
+                </li>
+
+            </ul>
+
+            
+
+
+        </section>
+
+        <section id="video">
+
+            <h2>Conheça o SENAI</h2>
+
+            <p>
+                Assista ao vídeo e conheça um pouco mais
+                sobre a educação profissional e tecnológica.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/1hbzT3T1Vcs?si=r-6NyOMgOvHI-O6M"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        </section>
+
+        <section id="contato">
+
+            <h2>Fale Conosco</h2>
+
+            <p>
+                Entre em contato para tirar suas dúvidas sobre
+                cursos, matrículas e oportunidades de aprendizagem.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer class="texto">
+
+        <h3>Informações de contato</h3>
+
+        <p>Instituição: SENAI</p>
+        <p>Cidade: Mococa - SP</p>
+        <p>Telefone: Consulte os canais oficiais da unidade.</p>
+        <p>E-mail: Consulte o contato oficial da unidade.</p>
+
+    </footer>
+
+</body>
+
+</html>
