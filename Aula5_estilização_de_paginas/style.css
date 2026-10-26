@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+.destaque {
+    color: blue;
+    font-weight: bold;
+}
+
+#titulo-principal {
+    color: red;
+    text-align: center;
+}
+
+p {
+    color: green;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+h1,
+h2,
+h3 {
+    font-family: arial, sans-serif;
+    color: darkgreen;
+}
+
+h4 {
+    font-family: arial, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    color: orange;
+}
+
+img {
+    border: 2px solid black;
+    display: block;
+    margin: auto;
+}
+
+ul {
+    list-style-type: square;
+    list-style-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStFuxFXEJOB6jwZfEe30xNgbyoQcpdCqAyilWJ0q3RbDKOUaYjC-hq6UmRL1EX65-8AdNiPIZi4Pan2JZNZrU7-0DSFyN6MSzA-chAe1j0&s=10");
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 10px;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: yellow;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a:active {
+    color: orange;
+}
