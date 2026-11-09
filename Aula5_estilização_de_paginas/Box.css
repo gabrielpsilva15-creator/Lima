@@ -1,0 +1,29 @@
+h1 {
+    color: yellow;
+    padding: 25px;
+    border: 20px;
+    margin: 25px;
+    width: 200px;
+background-color:black;
+text-align: auto;
+box-sizing:content-box;
+}
+
+div {
+    margin:20px;
+}
+
+.content-box{
+   background-color:cyan;
+   width:300px;
+   padding:25px;
+   border: 5px solid red;
+   box-sizing:content-box;
+}
+   .border-box {
+background-color:grey;
+   width:300px;
+   padding:25px;
+   border: 5px solid red;
+   box-sizing:border-box;
+   }
