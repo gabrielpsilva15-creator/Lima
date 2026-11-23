@@ -16,30 +16,30 @@
     text-align: center;
 }
 
-/* Exemplo básico de Grid */
+/* 1. Exemplo básico de Grid */
 .basico {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100px 100px;
 }
 
-/* Grid utilizando repeat() e minmax() */
+/* 2. Grid utilizando repeat() e minmax() */
 .repeat-minmax {
     grid-template-columns: repeat(3, minmax(100px, 1fr));
     grid-auto-rows: 100px;
     gap: 10px;
 }
 
-/* Grid utilizando auto-fit */
+/* 3. Grid utilizando auto-fit */
 .auto-fit {
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     grid-auto-rows: 100px;
     gap: 10px;
 }
 
-/* Grid com sobreposição de elementos */
+/* 4. Grid com sobreposição de elementos */
 .sobreposicao {
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 100px 100px;
+    grid-template-rows: 100px 100px 100px;
     gap: 10px;
 }
 
@@ -47,6 +47,7 @@
 .item1 {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
+    background-color: rgba(0, 255, 255, 0.7);
 }
 
 /* Segundo item */
@@ -70,10 +71,10 @@
     background-color: rgba(0, 255, 0, 0.5);
 }
 
-/* Grid com áreas nomeadas */
+/* 5. Grid com áreas nomeadas */
 .areas-numeradas {
-    display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 80px 200px 60px;
     grid-template-areas:
         "cabeçalho cabeçalho"
         "menu conteúdo"
@@ -105,17 +106,16 @@
     background-color: #9c27b0;
 }
 
-/* Grid aninhada */
+/* 6. Grid aninhada */
 .grid-aninhada {
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
 
-/* Configuração do subgrid */
+/* Configuração do subgrid container */
 .subgrid-conteiner {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
@@ -124,6 +124,47 @@
     background-color: orange;
     color: white;
     padding: 10px;
+}
+
+/* 7. Layout completo de página */
+.layout-pagina {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas:
+        "header header"
+        "nav nav"
+        "aside main"
+        "footer footer";
+    gap: 10px;
+}
+
+/* Cabeçalho */
+.header {
+    grid-area: header;
+    background-color: #3f51b5;
+}
+
+/* Navegação */
+.nav {
+    grid-area: nav;
+    background-color: #f44336;
+}
+
+/* Barra lateral */
+.aside {
+    grid-area: aside;
+    background-color: #ff9800;
+}
+
+/* Conteúdo principal */
+.main {
+    grid-area: main;
+    background-color: #2196f3;
+}
+
+/* Rodapé */
+.footer {
+    grid-area: footer;
+    background-color: #4caf50;
 }
 
 /* Configurações gerais da página */
@@ -143,5 +184,26 @@ h2 {
     margin-top: 40px;
     border-bottom: 2px solid #ccc;
     padding-bottom: 10px;
+    text-align: center;
+}
+
+/* Configuração da navegação */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Configuração do conteúdo principal */
+main {
+    padding: 20px;
+}
+
+/* Configuração do rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
     text-align: center;
 }
